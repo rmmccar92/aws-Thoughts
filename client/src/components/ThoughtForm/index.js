@@ -18,6 +18,23 @@ const ThoughtForm = () => {
   // submit form
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    const postData = async () => {
+      try {
+        const res = await fetch("/api/users", {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formState),
+        });
+        const data = await res.json();
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    postData();
 
     // clear form value
     setFormState({ username: "", thought: "" });
