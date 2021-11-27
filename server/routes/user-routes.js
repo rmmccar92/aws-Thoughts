@@ -58,6 +58,7 @@ router.post("/", (req, res) => {
       username: req.body.username,
       createdAt: Date.now(),
       thought: req.body.thought,
+      image: req.body.image, // add new image attribute
     },
   };
   dynamodb.put(params, (err, data) => {

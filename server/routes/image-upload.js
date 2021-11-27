@@ -17,7 +17,7 @@ const s3 = new AWS.S3({
   apiVersion: "2006-03-01",
 });
 
-router.post("/image-upload", upload, (req, res) => {
+router.post("/", upload, (req, res) => {
   console.log("post('/api/image-upload'", req.file);
   // set up params config
   const params = paramsConfig(req.file);
