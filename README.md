@@ -2,7 +2,7 @@
 
 [Repository Link](https://github.com/rmmccar92/aws-Thoughts)
 
-[Deployment Link](https://pod-central.herokuapp.com/)
+[Deployment Link](http://18.188.24.158/)
 
 ## Table of Contents
 
