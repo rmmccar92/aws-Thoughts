@@ -18,7 +18,7 @@ This application utilizes several services through Amazon Web Services to provid
 
 ## Usage
 
-Video of Usage
+Demo of Usage
 ![Demo of Usage](./assets/demo.gif)
 
 ## License
